@@ -1,7 +1,3 @@
-
-
-
-
 #home {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -11,11 +7,11 @@
 }
 
 @font-face {
-  font-family: 'MyCustomFont'; /* Придумайте название */
-  src: url('fonts/ofont.ru_AA\ Magnum.ttf') format('truetype'); /* Путь к файлу */
+    font-family: 'MyCustomFont';
+    src: url('fonts/ofont.ru_AA\ Magnum.ttf') format('truetype');
 }
 
-.display-4 { 
+.display-4 {
     font-family: 'MyCustomFont', sans-serif !important;
     font-size: 80px;
 }
@@ -36,12 +32,14 @@
 }
 
 .search {
-    margin-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+
 }
 
 .card-text {
     text-align: justify;
-    color:aliceblue;
+    color: aliceblue;
     font-size: 18px;
 }
 
@@ -50,6 +48,7 @@
     font-size: 22px;
     font-weight: bold;
 }
+
 .card-titles {
     font-weight: bold;
     font-size: 40px;
@@ -59,17 +58,18 @@
 .card-price {
     color: azure;
 }
-.text-grade {
-   color: rgba(251, 255, 0, 0.841);
-   font-size: 25px
+
+.stars-rating {
+    color: rgba(251, 255, 0, 0.841);
+    font-size: 20px
 }
 
 .card-img-top {
-    width: 100%;      
-    height: 200px;    
-    object-fit: cover; 
-    object-position: center; 
-    
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+
 }
 
 .card {
@@ -99,15 +99,15 @@
     font-weight: bold;
     font-size: 25px;
     text-align: center;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .advantages-text {
     font-weight: bold;
     font-size: 16px;
     text-align: justify;
-    hyphens: auto; 
-    
+    hyphens: auto;
+
 }
 
 .advantages {
@@ -142,4 +142,95 @@ footer a {
 
 footer a:hover {
     color: #ffc107;
+}
+
+.catalog-links {
+    padding-top: 50px;
+    padding-left: 53px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.catalog-main {
+    color: rgb(6, 52, 255);
+}
+
+.catalog-main:hover {
+    color: rgb(0, 48, 180)
+}
+
+.catalog-title {
+    font-weight: bold;
+}
+
+.catalog-text {
+    font-size: 15px;
+}
+
+.catalog-section {
+    padding-left: 40px;
+}
+
+.vertical-scroll-container {
+    height: 930px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 15px;
+    background-color: #212529;
+
+}
+
+.vertical-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.catalog-product {
+    background-color: #212529;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.catalog-product {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.collapse {
+    padding-right: 90px;
+}
+
+
+.stars {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+}
+
+/* Пустые звёзды */
+.stars::before {
+    content: "★★★★★";
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fbff00;
+    letter-spacing: 4px;
+}
+
+/* Заливка */
+.stars-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.stars-fill::before {
+    letter-spacing: 4px;
+    content: "★★★★★";
+    color: #fbff00;
+    -webkit-text-stroke: 0;
+
 }
