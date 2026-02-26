@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-index">
     <header>
         <!-- Навигационная панель -->
         <nav class="navbar navbar-expand-lg navbar-white  bg-white ">
             <div class="container-fluid">
-                <a class="navbar-brand main-title ms-5 text-primary" href="#">VOLGA-PC</a>
+                <a class="navbar-brand main-title ms-4 text-primary" href="#">VOLGA-PC</a>
                 <!-- Пункты меню -->
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav mx-auto ">
@@ -56,7 +56,7 @@
             <div class="container text-center">
                 <h1 class="display-4"><b>Добро пожаловать в <br> VOLGA-PC</b></h1>
                 <p class="lead">Готовые PC по хорошим ценам!</p>
-                <button class="btn btn-primary btn-lg">Посмотреть Каталог</button>
+                <a class="btn btn-primary btn-lg" href="/catalog.html">Посмотреть Каталог</a>
             </div>
         </div>
     </header>
@@ -70,12 +70,20 @@
                 <div class="col">
                     <div class="card mb-3 h-100 rounded-4 shadow-sm">
                         <img src="/img/products/PC_RTX4060.png" class="card-img-top rounded-top-4" alt="Ноутбук">
+                        <span class="badge bg-danger  position-absolute top-1 start-0 m-3">
+                            😎Best
+                        </span>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Бюджетный Игровой-PC</h5>
                             <p class="card-text">Идеальная сборка для средне-высоких настроек в играх. Идеально для
                                 учебы😉</p>
                             <div class="mt-auto">
-                                <span class="text-grade">★★★★☆ 4.7</span>
+                                <div>
+                                    <div class="stars">
+                                        <div class="stars-fill" style="width: 89%;"></div>
+                                    </div>
+                                    <span class="stars-rating">4.7</span>
+                                </div>
                                 <h4 class="card-price mt-3">99 990 ₽</h4>
 
                                 <button class="btn btn-primary w-100">Купить</button>
@@ -88,13 +96,21 @@
                 <div class="col">
                     <div class="card mb-3 h-100 rounded-4 shadow-sm">
                         <img src="/img/products/mini_PC_RTX3050.jpg" class="card-img-top rounded-top-4" alt="Ноутбук">
+                        <span class="badge bg-warning position-absolute top-0 start-0 m-3">
+                            🔥Mini
+                        </span>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Mini-PC</h5>
                             <p class="card-text">Отличный PC для работы, учёбы и офиса благодаря компактности и
                                 мобильности.</p>
 
                             <div class="mt-auto">
-                                <span class="text-grade">★★★★☆ 4.5</span>
+                                <div>
+                                    <div class="stars">
+                                        <div class="stars-fill" style="width: 89%;"></div>
+                                    </div>
+                                    <span class="stars-rating">4.7</span>
+                                </div>
                                 <h4 class="card-price mt-3">74 990 ₽</h4>
 
                                 <button class="btn btn-primary w-100">Купить</button>
@@ -107,12 +123,20 @@
                 <div class="col">
                     <div class="card mb-3 h-100 rounded-4 shadow-sm">
                         <img src="/img/products/custom_PC.jpg" class="card-img-top rounded-top-4" alt="Ноутбук">
+                        <span class="badge bg-success position-absolute top-0 start-0 m-3">
+                            ✅NEW
+                        </span>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Custom-PC</h5>
                             <p class="card-text">Сделаем любой PC под ваши требования и пожелания</p>
 
                             <div class="mt-auto">
-                                <span class="text-grade">★★★★★ 5.0 </span>
+                                <div>
+                                    <div class="stars">
+                                        <div class="stars-fill" style="width: 100%;"></div>
+                                    </div>
+                                    <span class="stars-rating">5.0</span>
+                                </div>
                                 <h4 class="card-price mt-3">Договорная</h4>
                                 <button class="btn btn-primary w-100">Заказать</button>
                             </div>
@@ -132,7 +156,7 @@
         <p class="title-advantages text-center">Наши преимущества</p>
         <div class="advantages">
             <div class="row  g-2">
-                <div class="card rounded-3 m-2" style="width: 20rem;">
+                <div class="card rounded-3 m-2" style="width: 19rem;">
                     <div class="card-body">
                         <p class="advantages-emoji">🔬</p>
                         <p class="advantages-info">Проф-сервис</p>
@@ -140,7 +164,7 @@
                             то, от чего отказались другие сервисы</p>
                     </div>
                 </div>
-                <div class="card rounded-3 m-2" style="width: 20rem;">
+                <div class="card rounded-3 m-2" style="width: 19rem;">
                     <div class="card-body">
                         <p class="advantages-emoji">🛠️</p>
                         <p class="advantages-info">Бесплатная Диагностика PC</p>
@@ -148,7 +172,7 @@
                             скрытых платежей</p>
                     </div>
                 </div>
-                <div class="card rounded-3 m-2" style="width: 20rem;">
+                <div class="card rounded-3 m-2" style="width: 19rem;">
                     <div class="card-body">
                         <p class="advantages-emoji">☎️</p>
                         <p class="advantages-info">Поддержка 24/7</p>
@@ -163,7 +187,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-1">
                     <h5>О компании</h5>
                     <p>
                         Volga-PC — ваш надежный проводник в мире высоких технологий. Мы специализируемся на
@@ -171,15 +195,7 @@
                         клиент получил максимум производительности за свой бюджет.
                     </p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Быстрые ссылки</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#home">Главная</a></li>
-                        <li><a href="#product">Популярные товары</a></li>
-                        <li><a href="#contact">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-1">
                     <h5 id="contact">Контакты</h5>
                     <ul class="list-unstyled">
                         <li>Email: Volga_PC@pc.shop</li>
@@ -187,6 +203,21 @@
                         <li>Адрес: Волжский, ул. 40 лет победы, д. 123</li>
                     </ul>
                 </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Наши соцсети</h5>
+                    <div>
+                        <div class="d-flex sdfsdf gap-2">
+                            <button class="btn button-services btn-outline-dark"><img src="/img/products/VK.png"
+                                    width="30" alt="VK"></button>
+                            <button class="btn button-services btn-outline-dark "><img
+                                    src="/img/products/Discord(2).png" width="30" alt="Ds"></button>
+                            <button class="btn button-services btn-outline-dark"><img src="/img/products/Git_Hub.png"
+                                    width="30" alt="Git"></button>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
             <hr style="border-color: rgb(255, 255, 255)" />
             <div class="text-center mt-3">
